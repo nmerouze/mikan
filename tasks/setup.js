@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const crypto = require('crypto');
-const projectsPath = path.join(__dirname, '../projects2');
+const projectsPath = path.join(__dirname, '../projects');
 const newProjectPath = path.join(projectsPath, 'newProject');
 
 fs.mkdirSync(projectsPath);
