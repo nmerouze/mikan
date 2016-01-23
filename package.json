@@ -1,0 +1,32 @@
+{
+  "name": "mikan",
+  "version": "0.1.0",
+  "description": "Flat-file API-first CMS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha test/index.js",
+    "setup": "node tasks/setup.js"
+  },
+  "author": "Nicolas Merouze",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "co-mocha": "^1.1.2",
+    "co-supertest": "0.0.10",
+    "mocha": "^2.3.4",
+    "supertest": "^1.1.0"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-fs": "^1.2.0",
+    "csv": "^0.4.6",
+    "js-yaml": "^3.5.2",
+    "jsonwebtoken": "^5.5.4",
+    "koa": "^1.1.2",
+    "koa-parse-json": "^1.0.1",
+    "koa-router": "^5.3.0",
+    "marked": "^0.3.5",
+    "sift": "^3.1.1"
+  }
+}
