@@ -3,3 +3,4 @@ node_modules
 projects
 TODO.md
 client
+npm-debug.log

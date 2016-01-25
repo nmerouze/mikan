@@ -1,1 +1,5 @@
-require('./src').listen(process.env.PORT || 3000);
+const server = require('./src');
+
+server.start(() => {
+  console.log('Server running at:', server.info.uri);
+});
