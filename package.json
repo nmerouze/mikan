@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "lab -c test",
-    "setup": "node scripts/setup.js"
+    "test": "lab -c test"
   },
   "author": "Nicolas Merouze",
   "license": "MPL-2.0",
@@ -16,6 +15,7 @@
   },
   "dependencies": {
     "bluebird": "^3.1.2",
+    "commander": "^2.9.0",
     "csv": "^0.4.6",
     "hapi": "^12.1.0",
     "js-yaml": "^3.5.2",
