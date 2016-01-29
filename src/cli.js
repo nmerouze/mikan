@@ -1,3 +1,4 @@
+const path = require('path');
 const program = require('commander');
 
 program
@@ -7,9 +8,14 @@ program
   .command('start <path>', { isDefault: true })
   .description('start web server')
   .option('-p, --port <n>', 'web server port (default: 3000)', parseInt)
-  .action(function(path, options){
+  .action(function(projectsPath, options){
     process.env.PORT = options.port;
-    process.env.PROJECTS_DIR = require('path').join(process.cwd(), path);
+    
+    if (path.isAbsolute(projectsPath)) {
+      process.env.PROJECTS_DIR = projectsPath;
+    } else {
+      process.env.PROJECTS_DIR = require('path').resolve(process.cwd(), projectsPath);
+    }
 
     const server = require('.');
 

@@ -81,4 +81,4 @@ module.exports = {
       err(reply, 500, e);
     });
   }
-}
+};

@@ -20,7 +20,7 @@ module.exports = {
   handler: (req, reply) => {
     const ctx = {};
 
-    return setProject(req.info.hostname)
+    setProject(req.info.hostname)
     .then(project => {
       ctx.project = project;
       ctx.userDirPath = path.join(ctx.project.path, 'users');
@@ -44,4 +44,4 @@ module.exports = {
     })
     .catch(e => err(reply, 500, e));
   }
-}
+};
