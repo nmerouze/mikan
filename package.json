@@ -3,6 +3,9 @@
   "version": "0.1.1",
   "description": "Flat-file API-first CMS",
   "main": "index.js",
+  "bin": {
+    "mikan": "./bin/mikan"
+  },
   "scripts": {
     "start": "node index.js",
     "test": "lab -c test"
